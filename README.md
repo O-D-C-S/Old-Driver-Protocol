@@ -17,30 +17,46 @@ When you recieve a mystery plain text from the Old Drivers, use the Old Driver P
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in RFC 2119
 ###1. Terminology
 `ODP Header`
+
 A Old Driver Protocol Message Structure's Begin Tag.
 
 *Requirement Level: MUST*
+
 *Format: ODP/[ODPversion]*
+
 *e.g: ODP/0.1*
 
 `Resource Type`
+
 The statement of the resource type which this ODP Message contains.
 
+
 *Requirement Level: OPTIONAL* 
+
 *Format: Type/[ResourceType]*
+
 *Option: NetDisk, PlainText, Image, URI(RFC 3305), MIME(RFC 2045, RFC 2046, RFC 2047, RFC 2048, RFC 2049, etc.)*
+
 *e.g: Type/NetDisk*
 
 `ODP Content`
+
 The Content of Resource. **A empty line before it is Required**.
 
 *Requirement Level: MUST*
+
 *Format: [MsgContent]*
+
 *e.g: http://pan.baidu.com/xxxx*
+
 
 ###2. Message Content Structure
 Example:
+
 ODP/0.1**\r\n**
+
 Type/NetDisk**\r\n**
+
 **\r\n**
+
 http://pan.baidu.com/xxxx
