@@ -1,17 +1,16 @@
 # OldDriverProtocol
 老司机协议是用于即时聊天中老司机开车的协议标准
 
-##How to use ODP(Old Driver Protocol)?
+#How to use ODP(Old Driver Protocol)?
 
-###As Old Driver
-Use the Old Driver Protocol Standard to encode your resource link, and send the encoded plain text to others
-###As Driving Beginner
-When you recieve a mystery plain text from the Old Drivers, use the Old Driver Protocol to decode the encoded plain text, and you get the resource.
-###As Passengers
+##As Old Driver
+Follow the documents below to create your own ODP Message
+##As Passengers
 Use the Old Driver Protocal to look for, or to request resource from those real old drivers
 
-##History
+#History
 2015.12.30: v0.1 protocol standard release
+
 2015.12.27: First presented in ACG Hackers QQ Group
 
 #ODP Standard v0.2
@@ -26,61 +25,59 @@ The following signs are used to adjunctively describe the structure inside of a 
 
 
 ###1. Terminology
-`ODP Header`
+* **ODP Header**
 
-An Old Driver Protocol Message Structure's Begin Tag.
+  * *Description:* An Old Driver Protocol Message Structure's Begin Tag.
 
-*Requirement Level: MUST*
+  * *Requirement Level:* MUST
 
-*Format: ODP/(ODPversion) \[(Operation)\]*
+  * *Format:* ODP/(ODPversion) \[(Operation)\]
 
-*Operations:DRIVING,REQUEST,PREVIEW*
+  * *Operations:* DRIVING, REQUEST, PREVIEW
 
-*e.g. ODP/0.2 DRIVING*
+  * *e.g.* ODP/0.2 DRIVING
 
-`Resource Type`
+* **Resource Type**
 
-The statement of the resource type which this ODP Message contains.
+  * *Description:* The statement of the resource type which this ODP Message contains.
 
+  * *Requirement Level:* OPTIONAL
 
-*Requirement Level: OPTIONAL* 
+  * *Format:* Type/(ResourceType)
 
-*Format: Type/(ResourceType)*
+  * *ResourceTypes:* Image, URI(RFC 3305), MIME(RFC 2045, RFC 2046, RFC 2047, RFC 2048, RFC 2049, etc.)
 
-*ResourceTypes: NetDisk, PlainText, Image, URI(RFC 3305), MIME(RFC 2045, RFC 2046, RFC 2047, RFC 2048, RFC 2049, etc.)*
+  * *e.g.* Type/NetDisk
 
-*e.g. Type/NetDisk*
+* **ODP Content**
 
+  * *Description:* The Content of Resource. **An empty line before this part is Required**.
 
-`ODP Content`
+  * *Requirement Level:* MUST
 
-The Content of Resource. **An empty line before it is Required**.
+  * *Format:* (ResourceContent) | ShousaiKibou
 
-*Requirement Level: MUST*
+  * *ResourceContents:* Same as Resource Type | Passengers' request
 
-*Format: (ResourceContent) | ShousaiKibou*
+  * *e.g.* http://pan.baidu.com/xxxx *(The content can be a single image without type declaraion when PREVIEW defined in header)*
 
-*e.g. http://pan.baidu.com/xxxx*
+* **ODP Ending**
 
-*p.s. The content can be a single image without type declaraion when PREVIEW defined in header*
+  * *Description:* Marks that ODP Message ends.
 
+  * *Requirement Level:* RECOMMENDED
 
-`ODP Ending`
-
-Marks that ODP Message ends.
-
-*Requirement Level: RECOMMENDED*
-
-*Format: ODP/END*
+  * *Format:* ODP/END
 
 
 ###2. Message Content Structure
-Example:
 
-ODP/0.1**\r\n**
+`ODP Header`*\r\n*
 
-Type/NetDisk**\r\n**
+`Resource Type`*\r\n*
 
-**\r\n**
+*\r\n*
 
-http://pan.baidu.com/xxxx
+`ODP Content`*\r\n*
+
+`ODP Ending`
