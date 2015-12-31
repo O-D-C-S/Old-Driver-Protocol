@@ -1,0 +1,9 @@
+E:\Workplace\ODPGenerator\ODPGenerator\bin\Debug\ODPGenerator.exe.config
+E:\Workplace\ODPGenerator\ODPGenerator\bin\Debug\ODPGenerator.exe
+E:\Workplace\ODPGenerator\ODPGenerator\bin\Debug\ODPGenerator.pdb
+E:\Workplace\ODPGenerator\ODPGenerator\obj\Debug\ODPGenerator.csprojResolveAssemblyReference.cache
+E:\Workplace\ODPGenerator\ODPGenerator\obj\Debug\ODPGenerator.Form1.resources
+E:\Workplace\ODPGenerator\ODPGenerator\obj\Debug\ODPGenerator.Properties.Resources.resources
+E:\Workplace\ODPGenerator\ODPGenerator\obj\Debug\ODPGenerator.csproj.GenerateResource.Cache
+E:\Workplace\ODPGenerator\ODPGenerator\obj\Debug\ODPGenerator.exe
+E:\Workplace\ODPGenerator\ODPGenerator\obj\Debug\ODPGenerator.pdb
