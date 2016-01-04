@@ -7,3 +7,12 @@ E:\Workplace\ODPGenerator\ODPGenerator\obj\Debug\ODPGenerator.Properties.Resourc
 E:\Workplace\ODPGenerator\ODPGenerator\obj\Debug\ODPGenerator.csproj.GenerateResource.Cache
 E:\Workplace\ODPGenerator\ODPGenerator\obj\Debug\ODPGenerator.exe
 E:\Workplace\ODPGenerator\ODPGenerator\obj\Debug\ODPGenerator.pdb
+E:\Workplace\OldDriverProtocol\ODP_Generator\ODPGenerator\ODPGenerator\bin\Debug\ODPGenerator.exe.config
+E:\Workplace\OldDriverProtocol\ODP_Generator\ODPGenerator\ODPGenerator\obj\Debug\ODPGenerator.exe
+E:\Workplace\OldDriverProtocol\ODP_Generator\ODPGenerator\ODPGenerator\obj\Debug\ODPGenerator.pdb
+E:\Workplace\OldDriverProtocol\ODP_Generator\ODPGenerator\ODPGenerator\bin\Debug\ODPGenerator.exe
+E:\Workplace\OldDriverProtocol\ODP_Generator\ODPGenerator\ODPGenerator\bin\Debug\ODPGenerator.pdb
+E:\Workplace\OldDriverProtocol\ODP_Generator\ODPGenerator\ODPGenerator\obj\Debug\ODPGenerator.csprojResolveAssemblyReference.cache
+E:\Workplace\OldDriverProtocol\ODP_Generator\ODPGenerator\ODPGenerator\obj\Debug\ODPGenerator.Form1.resources
+E:\Workplace\OldDriverProtocol\ODP_Generator\ODPGenerator\ODPGenerator\obj\Debug\ODPGenerator.Properties.Resources.resources
+E:\Workplace\OldDriverProtocol\ODP_Generator\ODPGenerator\ODPGenerator\obj\Debug\ODPGenerator.csproj.GenerateResource.Cache

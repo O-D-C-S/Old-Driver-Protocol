@@ -1,83 +1,26 @@
-# OldDriverProtocol
-老司机协议是用于即时聊天中老司机开车的协议标准
+# Old Driver Protocol
+老司机协议*(Old Driver Protocol / ODP)*是用于社交网络中老司机开车的协议标准。
 
-#How to use ODP(Old Driver Protocol)?
+**欢迎对发车标准化有兴趣的你提交 issue，或者直接提交 PullRequest。**
 
-##As Old Driver
-Follow the documents below to create your own ODP Message
-##As Passengers
-Use the Old Driver Protocal to look for, or to request resource from those real old drivers
+#如何使用 ODP 发车上车?
 
-#History
-2015.12.30: v0.1 protocol standard release
+###作为 老司机
 
-2015.12.27: First presented in ACG Hackers QQ Group
+下载用于你的平台的 ODP 客户端，开始创建你的 ODP 消息体。
+###作为 乘客
+下载用于你的平台的 ODP 客户端，解密来自老司机的神秘字符。
 
-#ODP Standard v0.2
-###0. Requirement
-The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in RFC 2119
+#历史
+`2015.01.02` 0.3 版本协议标准开始拟定，ODP 协议由个人转交至老司机标准化委员会管理。
 
-The following signs are used to adjunctively describe the structure inside of a format declaration
-*  [argument] : represents that the argument is OPTIONAL
-*  (argument) : represents that the argument is a tag or another meaningful expression
-*  {1-10} : represents that the argument MUST be in the declared range. `i.e. from 1 to 10`
-*  arg1|arg2 : represents that either arg1 or arg2 is acceptable `i.e. [a|b] represents that either a or b, or empty is valid`
+`2015.01.01` 0.2-alpha 版本协议标准开始拟定，ODP 消息生成器第一个版本发布。
 
+`2015.12.30` 0.1 版本协议标准发布。
 
-###1. Terminology
-* **ODP Header**
+`2015.12.27` 在 ACG Hackers QQ 群首次被提出。
 
-  * *Description:* An Old Driver Protocol Message Structure's Begin Tag.
-
-  * *Requirement Level:* MUST
-
-  * *Format:* ODP/(ODPversion) \[(Operation)\]
-
-  * *Operations:* DRIVING, REQUEST, PREVIEW
-
-  * *e.g.* ODP/0.2 DRIVING
-
-* **Resource Type**
-
-  * *Description:* The statement of the resource type which this ODP Message contains.
-
-  * *Requirement Level:* OPTIONAL
-
-  * *Format:* Type/(ResourceType)
-
-  * *ResourceTypes:* Image, URI(RFC 3305), MIME(RFC 2045, RFC 2046, RFC 2047, RFC 2048, RFC 2049, etc.)
-
-  * *e.g.* Type/NetDisk
-
-* **ODP Content**
-
-  * *Description:* The Content of Resource. **An empty line before this part is Required**.
-
-  * *Requirement Level:* MUST
-
-  * *Format:* (ResourceContent) | ShousaiKibou
-
-  * *ResourceContents:* Same as Resource Type | Passengers' request
-
-  * *e.g.* http://pan.baidu.com/xxxx *(The content can be a single image without type declaraion when PREVIEW defined in header)*
-
-* **ODP Ending**
-
-  * *Description:* Marks that ODP Message ends.
-
-  * *Requirement Level:* RECOMMENDED
-
-  * *Format:* ODP/END
-
-
-###2. Message Content Structure
-
-`ODP Header`*\r\n*
-
-`Resource Type`*\r\n*
-
-*\r\n*
-
-`ODP Content`*\r\n*
-
-`ODP Ending`
+#ODP 协议标准
+`v0.3` 请查看 ODP_0.3.md 文件
+`v0.2-alpha` 请查看 ODP_0.2.md 文件，0.2版本没有最终定稿
+`v0.1` 请查看README.md历史commit

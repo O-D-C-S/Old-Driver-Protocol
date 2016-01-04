@@ -37,7 +37,7 @@ namespace ODPGenerator
             if (singleImagecheckBox.Checked)
             {
                 ResourcetextBox.Enabled = false;
-                ResourcetextBox.Text = "[Place a Image here]";
+                ResourcetextBox.Text = "[在这里放置一个图片]";
                 textBox1.Text = "Image";
                 _ODP_singleImage = true;
             }
