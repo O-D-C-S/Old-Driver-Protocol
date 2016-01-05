@@ -20,7 +20,9 @@
 
 `2015.12.27` 在 ACG Hackers QQ 群首次被提出。
 
-#ODP 协议标准
+#ODP 协议标准版本
 `v0.3` 请查看 ODP_0.3.md 文件
+
 `v0.2-alpha` 请查看 ODP_0.2.md 文件，0.2版本没有最终定稿
+
 `v0.1` 请查看README.md历史commit
