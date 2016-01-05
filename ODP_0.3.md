@@ -14,21 +14,21 @@
 
 ## 0x02 ODP 消息体结构概述
 * Fast-ODP
-  * `odp://AES(local@base64(Content))/`
+  * `odp://base64(AES(local@base64(Content)))/`
 * Classic-ODP
-  * `odp://AES(remote@Server:port@RSAEncryptContent)/`
+  * `odp://base64(AES(remote@Server:port@RSAEncryptContent))/`
 
 ## 0x03 Fast-ODP
-消息体结构: `odp://AES(local@base64(Content))/`
+消息体结构: `odp://base64(AES(local@base64(Content)))/`
 
  * Url Scheme 开头: `odp://`
 
  * ODP 类型标识: `local`  *(即本地模式, Fast-ODP)*
 
- * 发车内容: `Content` (任意内容base64编码之后的字符串)
+ * 发车内容: `Content`
 
 ## 0x04 Classic-ODP
-消息体结构: `odp://AES(remote@Server:port@RSA(base64(Content)))/`
+消息体结构: `odp://base64(AES(remote@Server:port@RSAEncryptContent))/`
 
  * Url Scheme 开头: `odp://`
 
@@ -37,7 +37,7 @@
  * 发车内容: `Content`
   * **加密流程：**
   * ODP-Server (即 0x01 部分提到的加解密数据交换节点) 第一次运行时生成 RSA 密钥对，持久化储存，**公开公钥**。
-  * 对Content明文进行base64编码，再使用公钥对base64编码之后的内容进行加密。
+  * 对 Content 明文进行 base64 编码，再使用公钥对 base64 编码之后的内容进行加密。
   * **解密流程：**
   * 通过最外层的 AES 解密后得到 ODP-Server 的网络地址和运行端口，以及 Content 密文。
   * 乘客生成一个临时的 AES 密钥(256位，仅使用一次)，将该 AES 密钥和 Content 密文提交给 ODP-Server。
