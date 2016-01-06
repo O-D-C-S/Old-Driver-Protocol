@@ -1,15 +1,14 @@
 # Old Driver Protocol
-老司机协议*(Old Driver Protocol / ODP)*是用于社交网络中老司机开车的协议标准。
+老司机协议 *(Old Driver Protocol / ODP)* 是用于社交网络中老司机开车的协议标准。
 
 **欢迎对发车标准化有兴趣的你提交 issue，或者直接提交 PullRequest。**
 
 #如何使用 ODP 发车上车?
 
 ###作为 老司机
-
-下载用于你的平台的 ODP 客户端，开始创建你的 ODP 消息体。
+[下载](https://github.com/O-D-C-S/Soap)面向老司机的 ODP 客户端，开始创建你的 ODP 消息体。
 ###作为 乘客
-下载用于你的平台的 ODP 客户端，解密来自老司机的神秘字符。
+下载面向乘客的 ODP 客户端，解密来自老司机的神秘字符。
 
 #历史
 `2015.01.02` 0.3 版本协议标准开始拟定，ODP 协议由个人转交至老司机标准化委员会管理。
@@ -25,4 +24,4 @@
 
 `v0.2-alpha` 请查看 ODP_0.2.md 文件，0.2版本没有最终定稿
 
-`v0.1` 请查看README.md历史commit
+`v0.1` 请查看 README.md 历史 Commit
