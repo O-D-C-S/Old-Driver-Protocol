@@ -3,11 +3,12 @@
 
 **欢迎对发车标准化有兴趣的你提交 Issue，或者直接提交 Pull Request。**
 
-#如何使用 ODP 发车上车?
-###作为 老司机
-[下载](https://github.com/O-D-C-S/Soap)面向老司机的 ODP 消息助手，开始创建你的 ODP 消息体。
-###作为 乘客
-[下载](https://github.com/O-D-C-S/Soap)面向乘客的 ODP 消息助手，解密来自老司机的神秘字符。
+#如何以 ODP 协议标准发车上车?
+老司机标准化委员会提供了一些用于 ODP 协议加解密的 Demo 工具。（同样适用于生产环境）
+
+Windows: [Soap - ODP 消息体加解密工具](https://github.com/O-D-C-S/Soap)
+
+Android: [ODP-Android](https://github.com/O-D-C-S/Old-Driver-Protocol-AndroidDemo)
 
 #历史
 `2016.01.02` 0.3 版本协议标准开始拟定，ODP 协议由个人转交至老司机标准化委员会管理。
