@@ -10,6 +10,8 @@ Windows: [Soap - ODP 消息体加解密工具](https://github.com/O-D-C-S/Soap)
 
 Android: [ODP-Android](https://github.com/O-D-C-S/Old-Driver-Protocol-AndroidDemo)
 
+Unix: [fastdriver - Fast-ODP协议加解密命令行工具](https://github.com/lackofdream/fastdriver)
+
 #历史
 `2016.01.02` 0.3 版本协议标准开始拟定，ODP 协议由个人转交至老司机标准化委员会管理。
 
